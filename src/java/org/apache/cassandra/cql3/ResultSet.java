@@ -121,7 +121,7 @@ public class ResultSet
                     }
                     else
                     {
-                        sb.append(" | ");
+                        sb.append(" | HPDIC ");
                         if (metadata.flags.contains(Flag.NO_METADATA))
                             sb.append("0x").append(ByteBufferUtil.bytesToHex(v));
                         else
