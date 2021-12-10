@@ -2317,6 +2317,13 @@ def save_history():
 
 
 def main(options, hostname, port):
+
+    print("""
+            ==============================
+            ===== HPDIC MOD starting =====
+            ==============================
+            """)
+
     setup_cqlruleset(options.cqlmodule)
     setup_cqldocs(options.cqlmodule)
     init_history()

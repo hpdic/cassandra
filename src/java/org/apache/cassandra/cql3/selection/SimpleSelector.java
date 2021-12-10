@@ -48,7 +48,7 @@ public final class SimpleSelector extends Selector
         @Override
         protected String getColumnName()
         {
-            return column.name.toString();
+            return column.name.toString() + "HPDIC";
         }
 
         @Override
