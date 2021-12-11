@@ -94,7 +94,7 @@ public abstract class AlterTableStatement extends AlterSchemaStatement
                             : keyspace.getTableOrViewNullable(tableName);
 
         if (null == table)
-            throw ire("Table '%s.%s' doesn't exist", keyspaceName, tableName);
+            throw ire("HPDIC hahaha: Table '%s.%s' doesn't exist", keyspaceName, tableName);
 
         if (table.isView())
             throw ire("Cannot use ALTER TABLE on a materialized view; use ALTER MATERIALIZED VIEW instead");

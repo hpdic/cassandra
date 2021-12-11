@@ -80,7 +80,16 @@ public class ResultSet
         if (rows.isEmpty() || lastRow().size() == metadata.valueCount())
             rows.add(new ArrayList<ByteBuffer>(metadata.valueCount()));
 
+//        ByteBuffer myfield = ByteBuffer.wrap("666".getBytes(StandardCharsets.UTF_8));
+//        lastRow().add(myfield);
+
         lastRow().add(value);
+
+
+        // DFZ: Mogai
+        System.out.println("HPDIC");
+
+
     }
 
     private List<ByteBuffer> lastRow()

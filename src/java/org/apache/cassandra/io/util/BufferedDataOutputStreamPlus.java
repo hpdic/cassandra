@@ -229,7 +229,7 @@ public class BufferedDataOutputStreamPlus extends DataOutputStreamPlus
         buffer.flip();
 
         while (buffer.hasRemaining())
-            channel.write(buffer + "HPDIC");
+            channel.write(buffer);
 
         buffer.clear();
     }
